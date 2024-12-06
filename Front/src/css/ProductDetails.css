@@ -1,0 +1,65 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Product Detail Container */
+.product-detail {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Product Image */
+.product-detail img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Product Title */
+.product-detail h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+/* Product Description */
+.product-detail p {
+    color: #7f8c8d;
+    margin: 15px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Price */
+.product-detail p:nth-of-type(2) {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 1.2rem;
+}
+
+/* Category */
+.product-detail p:nth-of-type(3) {
+    font-style: italic;
+    color: #3498db;
+    font-size: 1rem;
+}

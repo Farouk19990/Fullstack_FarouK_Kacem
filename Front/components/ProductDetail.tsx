@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Product } from "../model/product";
-import '../src/css/styles.css';
+import '../src/css/ProductDetails.css';
 const ProductDetail: React.FC = () => {
     const { id } = useParams(); // Get product ID from URL parameters
     const [product, setProduct] = useState<Product | null>(null);
@@ -23,12 +23,13 @@ const ProductDetail: React.FC = () => {
     if (!product) return <div>Loading...</div>;
 
     return (
-        <div>
-            <h1>{product.title}</h1>
-            <p>{product.description}</p>
-            <p>Price: ${product.price}</p>
-            <p>Category: {product.category}</p>
-        </div>
+        <div className="product-detail">
+        <img src={product.thumbnail} alt={product.title} />
+        <h1>{product.title}</h1>
+        <p>{product.description}</p>
+        <p>Price: ${product.price}</p>
+        <p>Category: {product.category}</p>
+    </div>
     );
 };
 
